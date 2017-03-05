@@ -1,0 +1,77 @@
+                                       
+                                       /* Button */
+button{
+	.size-box(45px, 45px);
+}  
+                                   
+.section-right button{
+	.set-font(19px, #E1E1FC);
+	line-height: 30px;
+}
+
+// кнопка для відображення/приховування блоку section--left
+.btn-show{
+	float: left;
+
+	input[type="checkbox"]{
+		display: none;
+		
+		&:checked+label{
+			border: none;
+	
+			.arrow-left{
+				display: none
+			}
+
+			.arrow-right{
+				display: block;
+			}
+		}
+	}
+
+	label{
+		position: relative;
+		display: block;
+		.size-box(45px, 45px);
+		border: none;
+		cursor: pointer;
+
+		i{
+			position: absolute;
+			top: 12px;
+			display: block;
+			.size-box(20px, 20px);
+			border-top: 2px solid #fff;
+			border-left: 2px solid #fff;
+		}	
+	}
+
+	.arrow-left{
+		display: block;
+		left: 17px;
+		transform: rotate(315deg);
+	}
+	
+	.arrow-right{
+		display: none;
+		right: 16px;
+		transform: rotate(135deg);
+	} 
+}
+
+// кнопна меню
+.btn-menu{
+	.set-font(25px, #D8D8EB);
+}	
+
+// іконка листів
+.btn-letter{
+	float: left;
+}
+
+// кнопка для прикріплення документів
+.btn-download{
+	margin-top: 7.5px;
+	.set-font(20px, #ECECFD);
+}
+

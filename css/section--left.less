@@ -1,0 +1,63 @@
+                                  
+                                  /* Section left */
+                                  
+.section-left{
+	
+	/* блок для відображення користувачів */
+	.friends{
+		overflow: auto;
+		height: 690px;
+		padding-top: 25px;
+
+		div:last-of-type{
+			margin-bottom: 0;
+		}
+	}
+
+	.friend{
+		overflow: hidden;
+		height: 75px;
+		padding: 10px 20px;
+		margin-bottom: 35px;
+
+		&:hover{
+			background-color: #4B4EA4;
+		}
+
+		> *{
+			float: left;
+		}
+	}
+		
+	/* приховування великого тексту в рядку і 
+	   додавання трьох крапок */
+	.user-name,
+	.user-post{
+		dipslay: inline;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis; 
+		width: 260px; 
+	}
+
+	.user-name{
+		margin-top: 5px;
+		margin-bottom: 5px;
+		color: #fff;	
+	}
+
+	.user-post{
+		.set-font(14px, #6F71B4);
+	}
+
+	.timeout{
+		float: right;
+		.size-box(55px, 25px);
+		border-radius: 15px;
+		margin-top: 14px;
+		background-color: #393C8E;
+		.set-font(14px, #8182A5);
+		text-align: center;
+		line-height: 24px;
+	}
+}

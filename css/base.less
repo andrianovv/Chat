@@ -1,0 +1,29 @@
+                                     
+                                     /* Base */
+                                     
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+button{
+	float: right;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+main,
+header,
+footer,
+.friend{
+	&::after{
+		content: '';
+		clear: both;
+	}
+}
+
+.post{
+	clear: both;
+}

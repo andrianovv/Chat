@@ -1,0 +1,44 @@
+	                                   
+	                                   /* Footer */
+	                                   
+/* section-right footer */
+footer{
+
+	div{
+		float: left;
+
+		> *{
+			float: left;
+		}
+	}
+
+	// поле пошуку
+	textarea{
+		.size-box(520px, 60px);
+		min-width: 520px;
+		max-width: 520px;
+		min-height: 60px;
+		max-height: 60px;
+		border: none;
+		border-radius: 25px 0 0 25px;
+		padding: 15px 5px 5px 25px;
+		background-color: #EDEDFA;
+		font-size: 16px;
+		font-family: arial;
+	}
+
+	// вставлення смайликів
+	label[for=btn-smiley]{
+		position: relative;
+		.size-box(50px, 60px);
+		padding-top: 20px;
+		border-radius: 0 25px 25px 0;
+		background-color: #EDEDFA;
+		cursor: pointer;
+
+		i{
+			.set-aligment(9px);
+			.set-font(22px, #DADAE6);
+		}
+	}			 	
+}

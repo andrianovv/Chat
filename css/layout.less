@@ -1,0 +1,52 @@
+                                     
+                                     /* Layout */
+                                     
+main{
+	width: 1160px;
+	margin: 0 auto;
+	background-color: #fff;
+	.set-font();
+	font-family: arial, sans-serif;
+}
+
+header{
+	height: 80px;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+section{
+	float: left;
+	width: 60%;
+
+	// ава юзерів
+	.user-photo{
+		.size-box(55px, 55px);
+		border-radius: 50%;
+		margin-right: 15px;
+		background: url(../src/images/my_ava.jpg) no-repeat;
+		background-size: cover;
+	}
+
+	// поля відображення юзерів і їх повідомлень
+	.friends, 
+	.posts{
+		overflow: auto;
+	}
+}
+
+.section-left{
+	width: 40%;
+	background: #3B3E99;
+}
+
+footer{
+	height: 90px;
+	padding-top: 15px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+
+

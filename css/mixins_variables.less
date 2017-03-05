@@ -1,0 +1,21 @@
+                              
+                              /* Mixins and variables */
+                              
+// налаштування ширини і висоти блоку
+.size-box(@width-box: 0px, @height-box: 0px){
+    width: @width-box;
+    height: @height-box;
+}
+
+// налаштуваня шрифту - розміру і кольору
+.set-font(@size-font:1rem, @color-font: #000){
+	font-size: @size-font;
+	color: @color-font;
+}
+
+// налаштування горизонтального вирівнювання елементу
+.set-aligment(@left-margin){
+	position: absolute;
+	left: 50%;
+	margin-left: -@left-margin;
+}

@@ -1,0 +1,93 @@
+                                
+                                /* Section right */
+                                
+.section-right{
+
+	/* блок повідомлення юзерів */
+	.posts{
+		height: 600px;
+		
+		// вибірка непарного повідомлення
+		>div:nth-of-type(odd){
+
+			>div >div >div{
+				float: left;
+			}	
+
+			.post-text{
+				margin-left: 70px;
+				background-color: #989AD7;
+				color: #fff;
+			}
+
+			span{
+				float: right;
+			}
+			
+		}
+
+		// вибірка парного повідомлення
+		>div:nth-of-type(even){
+
+			>div{
+				float: right;
+
+				>div >div{
+					float: right;
+				}
+			}
+
+			.user-photo{
+				right: 0;
+			}
+
+			.post-text{
+				margin-right: 70px;
+				background-color: #F1F1FB;
+				color: #3B3B3C;
+			}
+
+			span{
+				float: left;
+			}
+			
+		}
+	}
+	
+	// контейнер одного повідомлення
+	.post{
+		padding-right: 30px;
+		padding-left: 30px;
+
+		>div{
+			display: inline-block;
+
+			>div{
+				position: relative;
+			}
+		}
+
+		span{
+			margin-top: 15px;
+			margin-right: 10px;
+			margin-bottom: 35px;
+			.set-font(13px, #CDCDF6);
+		}
+	}
+
+	// ава юзера
+	.user-photo{
+		position: absolute;
+		bottom: 0;
+		margin-right: 0;
+	}	
+	
+	// повідомлення юзера
+	.post-text{
+		display: inline-block;
+		word-wrap:break-word;
+		max-width: 330px;
+		padding: 20px 25px;
+		border-radius: 15px;
+	}		
+}
