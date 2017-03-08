@@ -1,26 +1,19 @@
-.size-box(@width-box: 0px, @height-box: 0px){
-    width: @width-box;
-    height: @height-box;
-}
 
-.set-font(@size-font:1rem, @color-font: #000){
-	font-size: @size-font;
-	color: @color-font;
-}
-	
-*{
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
+                               /* Exit page CSS */
 
-.wrapper{
+// фунції і змінні 
+@import 'mixins_variables.less'; 
+
+// reset css і спільні властивості тегів
+@import 'base.less';
+
+.wrapper-exit{
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	.size-box(500px, 300px);
+	.size-box(300px, 300px);
 	margin-top: -150px;
-	margin-left: -250px;
+	margin-left: -150px;
 	border-radius: 7px;
 	background-color: #3B3E99;
 
@@ -58,8 +51,8 @@
 
 	form{
 		padding-top: 15px;
-		padding-right: 50px;
-		padding-left: 50px;
+		padding-right: 20px;
+		padding-left: 20px;
 
 		h2{
 			padding-bottom: 5px;
