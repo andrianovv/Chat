@@ -4,9 +4,11 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Signup</title>
+		<title>My_Chat</title>
+		<!-- favicon -->
 		<link rel="icon" href="src/images/logo.png">
-		<link rel="stylesheet/less" href="css/singup.less">
+		<!-- CSS -->
+		<link rel="stylesheet/less" href="css/exit.less">
 
 		<!--[if lt IE 9]>
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -14,26 +16,20 @@
 		<![endif]-->
 	</head>
 	<body>
-		<main class="wrapper-exit wrapper-signup">
+		<main class="wrapper-exit">
 			<nav>
-				<a href="#">
-					<input type="radio" name="start-menu" id="login">
-					<label for="login">Sign In</label>
-				</a>
-				<a href="#">
-					<input type="radio" name="start-menu" id="signup" checked>
-					<label for="signup">Sign Up</label>
-				</a>
+				<a href="#">Sign In</a>
+				<a href="join.html" class="join">Sign Up</a>
 			</nav>
 			<form>
-				<h2>Sign up to My_Chat</h2>
+				<h2>Sign in to My_Chat</h2>
 				<input type="text" placeholder="Username">
-				<input type="text" placeholder="Email">
 				<input type="password" placeholder="Password">
 				<input type="submit" value="Sign in">
 			</form>
 		</main>
 		
+		<!-- LESS -->
 		<script src="src/less/less.js"></script>	
 	</body>
 </html>

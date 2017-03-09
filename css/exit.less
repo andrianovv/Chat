@@ -1,5 +1,5 @@
 
-                               /* Exit page CSS */
+                               /* login & join CSS */
 
 // фунції і змінні 
 @import 'mixins_variables.less'; 
@@ -7,37 +7,42 @@
 // reset css і спільні властивості тегів
 @import 'base.less';
 
+// сторінка входу & реєстрації
 .wrapper-exit{
-	position: absolute;
-	left: 50%;
+	.set-aligment(150px);
 	top: 50%;
 	.size-box(300px, 300px);
 	margin-top: -150px;
-	margin-left: -150px;
-	border-radius: 7px;
-	background-color: #3B3E99;
 
 	nav{
 		.size-box(100%, 50px);
-
+		
 		a{
 			display: block;
 			float: left;
 			.size-box(50%, 50px);
 			padding-top: 7px;
-			border: 2px solid #fff;
+			border-top-left-radius: 7px;
 			outline: none;
-			background-color: #4B4EA4;
+			background-color: #3B3E99;
 			.set-font(22px, #fff);
 			text-align: center;
 			cursor: pointer;
 		}
+
+		.join{
+			border: 2px solid #fff;
+			border-top-left-radius: 0;
+			border-top-right-radius: 7px;
+			background-color: #4B4EA4;
+		}
 	}
 
 	form{
-		padding-top: 15px;
-		padding-right: 20px;
-		padding-left: 20px;
+		padding: 15px 20px 25px 20px;
+		border-bottom-left-radius: 7px;
+		border-bottom-right-radius: 7px;
+		background-color: #3B3E99;
 
 		h2{
 			padding-bottom: 5px;
@@ -61,6 +66,27 @@
 			margin-top: 25px;
 			background-color: #BCBCE1;
 			.set-font(20px, #fff);
+			cursor: pointer;
 		}
 	}
+}
+
+// сторінка реєстрації
+.wrapper-join{
+	height: 355px;
+	margin-top: -177.5px;
+
+	nav{
+		a{	
+			border-top-left-radius: 0;
+			border-top-right-radius: 7px;
+		}
+
+		.login{
+			border: 2px solid #fff;
+			border-top-left-radius: 7px;
+			border-top-right-radius: 0;
+			background-color: #4B4EA4;
+		}
+	} 
 }
