@@ -12,51 +12,16 @@ button{
 // кнопка для відображення/приховування блоку section--left
 .btn-show{
 	float: left;
+	padding-right: 3px;
+	padding-bottom: 2px;
 
-	input[type="checkbox"]{
-		display: none;
-		
-		&:checked+label{
-			border: none;
-	
-			.arrow-left{
-				display: none
-			}
-
-			.arrow-right{
-				display: block;
-			}
-		}
+	i{
+		.set-font(37px, #fff);
 	}
 
-	label{
-		position: relative;
-		display: block;
-		.size-box(45px, 45px);
-		border: none;
-		cursor: pointer;
-
-		i{
-			position: absolute;
-			top: 12px;
-			display: block;
-			.size-box(20px, 20px);
-			border-top: 2px solid #fff;
-			border-left: 2px solid #fff;
-		}	
+	.fa-angle-right{
+		margin-left: 6px;
 	}
-
-	.arrow-left{
-		display: block;
-		left: 17px;
-		transform: rotate(315deg);
-	}
-	
-	.arrow-right{
-		display: none;
-		right: 16px;
-		transform: rotate(135deg);
-	} 
 }
 
 // кнопна меню
