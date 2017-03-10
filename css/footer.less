@@ -22,9 +22,10 @@ footer{
 		border: none;
 		border-radius: 25px 0 0 25px;
 		padding: 15px 5px 5px 25px;
-		background-color: #EDEDFA;
+		background-color: @color-bg-input;
 		font-size: 16px;
 		font-family: arial;
+		color: @color-text-input;
 	}
 
 	// вставлення смайликів
@@ -33,12 +34,12 @@ footer{
 		.size-box(50px, 60px);
 		padding-top: 20px;
 		border-radius: 0 25px 25px 0;
-		background-color: #EDEDFA;
+		background-color: @color-bg-input;
 		cursor: pointer;
 
 		i{
 			.set-aligment(9px);
-			.set-font(22px, #DADAE6);
+			.set-font(22px, @color-btn-smiley);
 		}
 	}			 	
 }
