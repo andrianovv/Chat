@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>My_Chat</title>
+		<title>Chat</title>
 		<!-- favicon -->
 		<link rel="icon" href="src/images/logo.png">
 		<!-- icons of awesome -->
@@ -34,7 +34,7 @@
 							<label for="btn-search">
 								<i class="fa fa-search" aria-hidden="true"></i>
 							</label>
-						</div>
+						</div> 
 						<!-- кнопна меню -->
 						<button type="button" class="btn-menu">
 							<i class="fa fa-bars" aria-hidden="true"></i>
@@ -42,73 +42,68 @@
 					</form>
 				</header>
 				<!-- блок для відображення користувачів -->
-				<div class="friends">
-					<div class="friend">
+				<ul class="users">
+					<li class="user">
+						<!-- фото юзера -->
 						<div class="user-photo"></div>
-						<h4 class="user-name">Vitali Andrianov Vitali Andrianov Vitali</h4>
-						<div class="timeout">28m</div>
-						<p class="user-post">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
-					<div class="friend">
+						<div class="user-info">
+							<!-- Повна назва юзера -->
+							<h4 class="user-info_name">Vitali Andrianov Vitali Andrianov Vitali</h4>
+							<!-- останній пост юзера -->
+							<p class="user-info_post">Lorem ipsum dolor sit amet, consectetur.</p>
+						</div>
+						<!-- час останнього повідомлення -->
+						<div class="user-timeout">28m</div>
+					</li>
+					<li class="user">
+						<!-- фото юзера -->
 						<div class="user-photo"></div>
-						<h4 class="user-name">Vitali Andrianov Vitali Andrianov Vitali</h4>
-						<div class="timeout">28m</div>
-						<p class="user-post">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>	
-				</div>
+						<div class="user-info">
+							<!-- Повна назва юзера -->
+							<h4 class="user-info_name">Vitali Andrianov Vitali Andrianov Vitali</h4>
+							<!-- останній пост юзера -->
+							<p class="user-info_post">Lorem ipsum dolor sit amet, consectetur.</p>
+						</div>
+						<!-- час останнього повідомлення -->
+						<div class="user-timeout">28m</div>
+					</li>
+					
+				</ul>
 			</section>
 			<!-- end section-left -->
 
 			<!-- start section-right -->
 			<section class="section-right">
-				<header>
-					<!-- іконка про нові повідомлення -->
-					<button type="button" class="btn-letter">
-						<i class="fa fa-envelope" aria-hidden="true"></i>
-					</button>
-					<!-- лого чату -->
-					<a href="#" alt="logo" class="logo"></a>
-					<!-- іконка про друзів -->
-					<button type="button" class="btn-setting">
-						<i class="fa fa-user" aria-hidden="true"></i>
-					</button>
-				</header>
 				<!-- блок повідомлення -->
-				<div class="posts">
-					<div class="post">
-						<div>
-							<div>
-								<div class="user-photo"></div>
-								<p class="post-text">Lorem ipsum dolor sit.fffffffffffff fdddddd dddd ddddfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv</p>
-							</div>
-							<span class="post-time">11:45</span>
-						</div>
-					</div>
-					<div class="post">
-						<div>
-							<div>
-								<div class="user-photo"></div>
-								<p class="post-text">Lorem ipsum dolor sit.fffffffffffff fdddddd dddd ddddfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv</p>
-							</div>
-							<span class="post-time">11:45</span>
-						</div>
-					</div>
+				<ul class="posts">
+					<li class="post">
+						<!-- фото юзера -->
+						<div class="user-photo"></div>
+						<!-- повідомлення юзера -->
+						<p class="post-text">Lorem ipsum dolor sit.fffffffffffff fdddddd dddd ddddfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv</p>
+						<!-- час початку відображення повідомлення -->
+						<span class="post-time">11:45</span>
+					</li>
+					<li class="post">
+						<!-- фото юзера -->
+						<div class="user-photo"></div>
+						<!-- повідомлення юзера -->
+						<p class="post-text">Lorem ipsum dolor sit.fffffffffffff fdddddd dddd ddddfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv</p>
+						<!-- час початку відображення повідомлення -->
+						<span class="post-time">11:45</span>
+					</li>
 					
-				</div>
+				</ul>
 				<footer>
-					<form>
-						<div>
-							<!-- поле пошуку -->
-							<textarea id="btn-smiley" placeholder="Type something..."></textarea>
-							<!-- вставлення смайликів -->
-							<label for="btn-smiley">
-								<i class="fa fa-smile-o" aria-hidden="true"></i>
-							</label>
-						</div>
-						<!-- кнопка для прикріплення документів -->
-						<button type="button" class="btn-download">
-							<i class="fa fa-files-o" aria-hidden="true"></i>
-						</button>
+					<form class="post-new">
+						<!-- поле вводу нового повідомлення -->
+						<textarea id="footer_label" placeholder="Type something..."></textarea>
+						<label for="footer_label">
+							<!-- кнопка для вставлення смайликів -->
+							<i class="btn-smiley fa fa-smile-o" aria-hidden="true"></i>
+							<!-- кнопка для прикріплення документів -->
+							<i class="btn-download fa fa-files-o" aria-hidden="true"></i>
+						</label>
 					</form>
 				</footer>
 			</section>

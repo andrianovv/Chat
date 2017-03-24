@@ -4,24 +4,17 @@
 /* section-right footer */
 footer{
 
-	div{
-		float: left;
-
-		> *{
-			float: left;
-		}
+	.post-new{
+		position: relative;
+		width: 75%;
 	}
 
 	// поле пошуку
 	textarea{
-		.size-box(520px, 60px);
-		min-width: 520px;
-		max-width: 520px;
-		min-height: 60px;
-		max-height: 60px;
+		.size-box(90%, 70px);
 		border: none;
 		border-radius: 25px 0 0 25px;
-		padding: 15px 5px 5px 25px;
+		padding: 5px 25px 5px 25px;
 		background-color: @color-bg-input;
 		font-size: 16px;
 		font-family: arial;
@@ -29,17 +22,13 @@ footer{
 	}
 
 	// вставлення смайликів
-	label[for=btn-smiley]{
-		position: relative;
-		.size-box(50px, 60px);
-		padding-top: 20px;
+	label[for=footer_label]{
+		position: absolute;
+		right: 0; 
+		.size-box(20%, 70px);
+		max-width: 65px;
+		padding-top: 22.5px;
 		border-radius: 0 25px 25px 0;
 		background-color: @color-bg-input;
-		cursor: pointer;
-
-		i{
-			.set-aligment(9px);
-			.set-font(22px, @color-btn-smiley);
-		}
-	}			 	
+	}		 	
 }

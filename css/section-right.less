@@ -5,86 +5,66 @@
 
 	/* блок повідомлення юзерів */
 	.posts{
+		display: flex;
+		flex-direction: column;
 		height: 600px;
+		padding-right: 30px;
+		padding-left: 30px;
+
+		// контейнер одного повідомлення
+		.post{
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-end;
+			flex-wrap: wrap;
+			max-width: 400px;
+		
+			span{
+				.set-font(13px, @color-text);
+				margin-top: 15px;
+				margin-bottom: 35px;
+			}
+		}
 		
 		// вибірка непарного повідомлення
-		>div:nth-of-type(odd){
-
-			>div >div >div{
-				float: left;
-			}	
-
+		>li:nth-of-type(odd){
+			
 			.post-text{
-				margin-left: 70px;
+				margin-left: 15px;
 				background-color: @color-bg-post_odd;
 				color: #fff;
 			}
 
 			span{
-				float: right;
+				margin-right: 10px;
 			}
 			
 		}
 
 		// вибірка парного повідомлення
-		>div:nth-of-type(even){
-
-			>div{
-				float: right;
-
-				>div >div{
-					float: right;
-				}
-			}
-
-			.user-photo{
-				right: 0;
-			}
+		>li:nth-of-type(even){
+			flex-direction: row-reverse;
+			align-self: flex-end;
 
 			.post-text{
-				margin-right: 70px;
+				margin-right: 15px;
 				background-color: @color-bg-post_even;
 				color: #000;
 			}
 
 			span{
-				float: left;
+				margin-left: 10px;
 			}
-			
 		}
 	}
 	
-	// контейнер одного повідомлення
-	.post{
-		padding-right: 30px;
-		padding-left: 30px;
-
-		>div{
-			display: inline-block;
-
-			>div{
-				position: relative;
-			}
-		}
-
-		span{
-			margin-top: 15px;
-			margin-right: 10px;
-			margin-bottom: 35px;
-			.set-font(13px, @color-text);
-		}
-	}
-
 	// ава юзера
 	.user-photo{
-		position: absolute;
-		bottom: 0;
 		margin-right: 0;
 	}	
 	
 	// повідомлення юзера
 	.post-text{
-		display: inline-block;
 		word-wrap:break-word;
 		max-width: 330px;
 		padding: 20px 25px;

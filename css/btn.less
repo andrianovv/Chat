@@ -2,21 +2,19 @@
                                        /* Button */
 button{
 	.size-box(45px, 45px);
+	color: #fff;
 }  
-                                   
-.section-right button{
-	.set-font(19px, @color-btn);
-	line-height: 30px;
+
+header>button{
+	line-height: 33px;
 }
 
 // кнопка для відображення/приховування блоку section--left
 .btn-show{
-	float: left;
 	padding-right: 3px;
-	padding-bottom: 2px;
 
 	i{
-		.set-font(37px, #fff);
+		font-size: 37px;
 	}
 
 	.fa-angle-right{
@@ -26,17 +24,17 @@ button{
 
 // кнопна меню
 .btn-menu{
-	.set-font(25px, #fff);
+	font-size: 25px;
 }	
 
-// іконка листів
-.btn-letter{
-	float: left;
-}
-
-// кнопка для прикріплення документів
+// кнопки footer
+.btn-smiley,
 .btn-download{
-	margin-top: 7.5px;
-	.set-font(20px, @color-btn);
+	.set-font(22px, @color-btn-smiley);
+	cursor: pointer;
 }
 
+// кнопка завантаження
+.btn-download{
+	margin-left: 10%;
+}

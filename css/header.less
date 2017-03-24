@@ -1,19 +1,20 @@
 	                                     
 	                                     /* Header */  
 	                                                         
-/* start section-left header */
-.section-left header{
+/* section-left header */
+header{
 
 	form{
-		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
-
+	
+	// поле з інпутом і кнопкою пошуку користувачів
 	.search{
-		.set-aligment(82.5px);
-		margin-top: 6px;
+		display: flex;
 
 		> *{
-			float: left;
 			background-color: @color-bg-input;
 		}
 	}
@@ -40,20 +41,3 @@
 		}		
 	}
 }
-/* end section-left header */
-
-/* start section-right header */
-.section-right header{
-	position: relative;
-	padding-right: 30px;
-	padding-left: 30px;
-
-	// лого чату
-	.logo{
-		.set-aligment(47.5px);
-		display: block;
-		.size-box(95px, 45px);
-		background-image: url(../src/images/logo.png);
-	}
-}
-/* end section-right header */

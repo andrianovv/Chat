@@ -1,8 +1,12 @@
                                      
                                      /* Layout */
-                                     
+body{
+	background-color: #F5F5FF;
+}
+                                  
 main{
-	width: 1160px;
+	display: flex;
+	max-width: 1160px;
 	margin: 0 auto;
 	background-color: #fff;
 	.set-font();
@@ -10,27 +14,24 @@ main{
 }
 
 header{
-	height: 80px;
-	padding-top: 20px;
-	padding-right: 20px;
-	padding-left: 20px;
+	padding: 20px;
 }
 
 section{
-	float: left;
 	width: 60%;
 
 	// ава юзерів
 	.user-photo{
 		.size-box(55px, 55px);
-		border-radius: 50%;
-		margin-right: 15px;
+		min-width: 55px;
+		border-radius: 100%;
+		margin-right: 5px;
 		background: url(../src/images/my_ava.jpg) no-repeat;
 		background-size: cover;
 	}
 
 	// поля відображення юзерів і їх повідомлень
-	.friends, 
+	.users, 
 	.posts{
 		overflow: auto;
 	}
@@ -41,12 +42,12 @@ section{
 	background: @color-bg;
 }
 
-footer{
-	height: 90px;
-	padding-top: 15px;
-	padding-right: 30px;
-	padding-left: 30px;
+.section-right{
+	padding-top: 85px;
 }
 
-
-
+footer{
+	display: flex;
+	justify-content: center;
+	padding: 10px 30px;
+}

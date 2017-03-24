@@ -2,59 +2,61 @@
                                   /* Section left */
                                   
 .section-left{
-	
+
 	/* блок для відображення користувачів */
-	.friends{
+	.users{
+		display: flex;
+		flex-direction: column;  
 		overflow: auto;
 		height: 690px;
-		padding-top: 25px;
 
-		div:last-of-type{
+		li:last-of-type{
 			margin-bottom: 0;
 		}
 	}
 
-	.friend{
-		overflow: hidden;
-		height: 75px;
-		padding: 10px 20px;
-		margin-bottom: 35px;
+	.user{
+		display: inline-flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-shrink: 0;
+		width: 100%;
+		height: 100px;
+		padding: 22.5px 20px;
 
 		&:hover{
 			background-color: @color-bg-hover;
 		}
+	}
 
-		> *{
-			float: left;
-		}
+	.user-info{
+		overflow: hidden;
+		width: 70%;
+		margin-right: 5px;
 	}
 		
 	/* приховування великого тексту в рядку і 
 	   додавання трьох крапок */
-	.user-name,
-	.user-post{
-		dipslay: inline;
+	.user-info_name,
+	.user-info_post{
 		overflow: hidden;
 		white-space: nowrap;
 		text-overflow: ellipsis; 
-		width: 260px; 
 	}
 
-	.user-name{
-		margin-top: 5px;
+	.user-info_name{
 		margin-bottom: 5px;
 		color: #fff;	
 	}
 
-	.user-post{
+	.user-info_post{
 		.set-font(14px, @color-text);
 	}
 
-	.timeout{
-		float: right;
-		.size-box(55px, 25px);
+	.user-timeout{
+		min-width: 55px;
+		height: 25px;
 		border-radius: 15px;
-		margin-top: 14px;
 		background-color: @color-bg-dark;
 		.set-font(14px, @color-text);
 		text-align: center;
